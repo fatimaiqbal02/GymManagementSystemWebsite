@@ -1,0 +1,726 @@
+/* --------------------x------------- Css Reset ----------x-------------------------------*/
+:root {
+	--main-color: rgb(255, 206, 0);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-family: "Lexend Deca", sans-serif;
+	transition: all 0.2s linear;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+}
+/* ---------------------------------- Css Reset ------------------------------------------*/
+/* ---------------------------------- Utility Classes ------------------------------------------*/
+.btn {
+	padding: 0.4rem 3rem;
+	border: 0.09rem solid var(--main-color);
+	border-radius: 0.8rem;
+	color: var(--main-color);
+	cursor: pointer;
+	margin-top: 1rem;
+	font-size: 1.7rem;
+	display: inline-block;
+}
+.btn:hover {
+	letter-spacing: 0.2rem;
+}
+.subheading {
+	font-family: "Oswald", sans-serif;
+	color: transparent;
+	-webkit-text-stroke: 0.1rem var(--main-color);
+	font-size: 9rem;
+	position: relative;
+	text-transform: uppercase;
+	color: transparent;
+	letter-spacing: 0.2rem;
+	text-align: center;
+	padding: 2rem 2rem;
+	pointer-events: none;
+}
+.subheading span {
+	color: black;
+	-webkit-text-stroke: rgba(22, 11, 11, 0.93);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	font-size: 4rem;
+}
+/* --------------------x------------- Utility Classes --------x---------------------------------*/
+/* ---------------------------------- Header Section ------------------------------------------*/
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.5rem 7%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+header .navbar a {
+	color: hsl(0, 0%, 100%);
+	font-size: 1.8rem;
+	margin: 0 1rem;
+}
+
+header .name {
+	color: white;
+	font-size: 2rem;
+}
+
+header .icons {
+	color: white;
+	font-size: 2rem;
+	cursor: pointer;
+}
+header .icons a{
+	color: white;
+}
+
+header .icons i {
+	padding: 0 0.2rem;
+}
+
+header #menu-btn {
+	font-size: 3rem;
+	color: white;
+	cursor: pointer;
+	display: none; /* normal */
+}
+
+header .navbar a:hover {
+	color: var(--main-color);
+	border-bottom: 0.1rem solid #d3ad7f;
+	padding-bottom: 0.3rem;
+	letter-spacing: 0.2rem;
+}
+
+header .icons i:hover,header .icons a:hover  {
+	color: var(--main-color);
+}
+
+.header {
+	background-color: black;
+	color: white;
+}
+
+/* --------------------x------------- Header Section ----------x-------------------------------*/
+/* ---------------------------------- Profile Section -------------------------------------- */
+.customerProfile {
+	position: fixed;
+	top: -120%;
+	left: 0; /* normal top:0; */
+	z-index: 100;
+	min-height: 100vh;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.customerProfile.active {
+	top: 0;
+}
+.customerProfile .container {
+	display: flex;
+	background-color: white;
+	max-height: 49rem;
+}
+.customerProfile .mainInfo img {
+	width: 8rem;
+	height: 8rem;
+	border: 0.2rem solid black;
+	border-radius: 50%;
+}
+.customerProfile .mainInfo .name {
+	font-weight: bold;
+}
+.customerProfile .mainInfo .email {
+	font-weight: lighter;
+}
+.customerProfile .btn {
+	font-size: 1.2rem;
+	color: white;
+	background-color: var(--main-color);
+}
+.customerProfile .btn:hover {
+	letter-spacing: normal;
+	background-color: rgb(255, 222, 33);
+}
+.customerProfile form {
+	width: 28rem;
+	padding: 0rem 0rem;
+}
+.customerProfile form .box {
+	font-size: 1.2rem;
+}
+.customerProfile form .selectFeild .txt,
+.customerProfile form .selectFeild label {
+	font-size: 1.2rem;
+}
+.customerProfile form .Txt h2 {
+	text-align: left;
+	font-weight: bold;
+	color: rgb(4, 4, 4);
+	font-size: 1.4rem;
+	margin-bottom: 1.5rem;
+}
+.customerProfile form .btn {
+	display: block;
+	margin: auto;
+	width: 70%;
+	font-size: 1.2rem;
+}
+.customerProfile form .column label {
+	color: #666;
+}
+.customerProfile form .box {
+	width: 90%;
+}
+.customerProfile form .selectFeild .items {
+	margin: 0 3rem;
+}
+header .customerProfile .selectslot {
+	width: 9rem;
+}
+.customerProfile .mainInfo {
+	margin: 18rem 2rem;
+	text-align: center;
+	color: black;
+}
+.popUp1CloseBtn {
+	position: absolute;
+	top: 2rem;
+	right: 3rem;
+	font-size: 4rem;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bold;
+}
+/* ------------------x--------------- Profile Section ----------------x---------------------- */
+/* ----------------------------------- css for the form setting -------------------------------------- */
+.customerProfile form .mobileNoClass label {
+	margin-right: 0.5rem;
+}
+.customerProfile form .ctAge label {
+	margin-right: 2.1rem;
+}
+.customerProfile form .cyof label {
+	margin-right: 3.3rem;
+}
+.customerProfile form {
+	border-left: 0.1rem solid #eee;
+	padding-left: 2rem;
+	border-radius: 0%;
+}
+/* ---------------------x------------- css for the form setting ------x------------------------------- */
+/* ---------------------------------- Home Section ------------------------------------------*/
+.home {
+	background: url("../images/bg-dumbbell.jpg");
+	height: 60rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.home .heading {
+	font-size: 3rem;
+	color: var(--main-color);
+	text-shadow: 0.3rem 0.5rem rgb(22 11 11 / 93%);
+	letter-spacing: 0.2rem;
+	font-family: "Oswald", sans-serif;
+	text-align: center;
+}
+
+.home .heading span {
+	font-family: "Oswald", sans-serif;
+	color: transparent;
+	-webkit-text-stroke: 0.1rem var(--main-color);
+	text-shadow: 0.3rem 0.5rem rgb(255 255 255 / 93%);
+	font-size: 4rem;
+}
+
+/* --------------------x------------- Home Section ----------x-------------------------------*/
+/* ---------------------------------- Membership Plan Section --------------------------------*/
+.plan {
+	padding-bottom: 4rem;
+	padding-top: 1.5rem;
+}
+
+.plan .subscribed-plan {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 70%;
+	margin: 0 auto;
+	border: 0.1rem solid var(--main-color);
+	padding: 2rem;
+	text-align: center;
+}
+
+.plan .subscribed-plan .title {
+	font-size: 5rem;
+	margin-bottom: 1rem;
+	color: var(--main-color);
+}
+
+.plan .subscribed-plan .price {
+	font-size: 2.5rem;
+	margin-bottom: 3rem;
+}
+
+.plan .subscribed-plan .facility {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.plan .subscribed-plan .item {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 3rem;
+	margin-top: 3rem;
+}
+
+.plan .subscribed-plan .item h4 {
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.plan .subscribed-plan .facility p {
+	font-size: 1.2rem;
+	text-align: left;
+}
+
+.plan .available-plan {
+	width: 70%;
+	margin: 2rem auto;
+	border: 0.1rem solid var(--main-color);
+	padding: 2rem;
+	text-align: center;
+}
+
+.plan .available-plan h1 {
+	color: var(--main-color);
+	font-size: 5rem;
+	margin-bottom: 3rem;
+}
+
+.plan .available-plan .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	gap: 2rem;
+}
+
+.plan .available-plan .container .item {
+	background-color: black;
+	text-align: center;
+	border: 0.1rem solid black(245, 243, 243, 0.3);
+	border-radius: 0.3rem;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.plan .available-plan .container .item:hover {
+	transform: scale(1.1);
+}
+
+.plan .available-plan .container .item .title {
+	font-size: 4rem;
+	font-family: "Oswald", sans-serif;
+	padding: 2rem;
+}
+.plan .available-plan .container .item .price {
+	margin-top: 2rem;
+	font-size: 3rem;
+	font-family: "Oswald", sans-serif;
+}
+.plan .available-plan .container .item .price sub,
+.plan .available-plan .container .item .price sup {
+	color: var(--main-color);
+}
+.plan .available-plan .container .item .facility {
+	font-size: 1.5rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	width: 50%;
+	text-transform: uppercase;
+}
+.plan .available-plan .container .item .btn {
+	margin-bottom: 2rem;
+	background-color: black;
+}
+
+/* --------------------x------------- Membership Plan Section ----------x----------------------*/
+/* ---------------------------------- Diet-PLan Section ---------------------------------*/
+.diet {
+	padding-top: 1.5rem;
+	margin: 0rem 8rem;
+	margin-bottom: 2rem;
+}
+
+.diet .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 70%;
+	margin: 0 auto;
+	border: 0.1rem solid var(--main-color);
+	padding: 2rem;
+	text-align: center;
+}
+
+.diet .container h3 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+
+.diet .container h3 span {
+	font-size: 4rem;
+}
+
+.diet .container p {
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+/* --------------------x------------- Diet-PLan Section ----------x----------------------*/
+/* ---------------------------------- Footer Section ---------------------------------*/
+footer {
+	background: rgb(32, 30, 30);
+	padding: 0 7rem;
+	padding-top: 2rem;
+}
+footer .container {
+	display: flex;
+	flex-wrap: wrap;
+	grid: 1.5rem;
+}
+footer .container .box {
+	padding: 1rem 0;
+	flex: 1 1 25rem;
+}
+footer .container .box h3 {
+	font-size: 2.5rem;
+	padding: 1.5rem 0;
+	font-family: "Oswald", sans-serif;
+	color: white;
+}
+footer .container .box p {
+	font-size: 1.5rem;
+	padding: 0.7rem 0;
+	padding-right: 4rem;
+	color: #eee;
+}
+footer .container .box a {
+	display: block;
+	font-size: 1.5rem;
+	padding: 0.7rem 0;
+	color: #eee;
+}
+footer .container .box a:hover {
+	color: var(--main-color);
+}
+footer .credit {
+	text-align: center;
+	padding: 2rem 1rem;
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	color: #eee;
+	border-top: 0.1rem solid rgba(255, 255, 255, 0.25);
+}
+/* --------------------x------------- Footer Section ----------x----------------------*/
+/* ---------------------------------- Available Trainer Section ---------------------------------*/
+.availableTrainers {
+	margin-bottom: 3rem;
+	margin-top: 1rem;
+}
+.availableTrainers .container {
+	display: block;
+	margin: auto;
+	margin-bottom: 7rem;
+	max-width: fit-content;
+	max-height: fit-content;
+	border: 0.1rem solid rgb(136, 136, 136);
+}
+.availableTrainers .Yourslot {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	margin: 0rem 24rem;
+}
+.availableTrainers .Yourslot label {
+	font-size: 1.4rem;
+	margin-right: 1.5rem;
+}
+.availableTrainers .Yourslot input {
+	font-size: 1.3rem;
+	color: #333;
+	margin: 0.7rem 0.3rem;
+	padding: 0.3rem;
+	height: fit-content;
+	text-transform: none;
+	border: 0.1rem solid rgb(180, 179, 179);
+	border-radius: 0.5rem;
+	outline: none;
+	width: 50%;
+}
+.availableTrainers input:focus {
+	border-color: var(--main-color);
+}
+.availableTrainers .Tblcontainer .Tblheader {
+	background-color: rgb(190, 185, 185);
+	color: black;
+	padding: 1rem 5rem 1rem 1rem;
+	font-size: 1.2rem;
+	font-weight: bolder;
+	display: flex;
+}
+.availableTrainers .Tblcontainer .Tblheader .col1 {
+	margin: 0rem 0.8rem;
+}
+.availableTrainers .Tblcontainer .Tblheader .col2 {
+	margin-left: 10rem;
+}
+.availableTrainers .Tblcontainer .Tblheader .col3 {
+	margin-left: 7rem;
+}
+.availableTrainers .Tblcontainer .Tblheader .col4 {
+	margin-left: 9.5rem;
+}
+.availableTrainers .Tblcontainer .Tblheader .col5 {
+	margin-left: 12rem;
+}
+.availableTrainers .Tblcontainer .trainerTable {
+	overflow-y: scroll;
+	height: 18rem;
+	display: block;
+	border-collapse: collapse;
+	font-size: 1.2rem;
+}
+
+.availableTrainers .Tblcontainer .trainerTable td {
+	padding: 0.5rem 1rem 0.5rem 2rem;
+	width: 16rem;
+}
+
+.availableTrainers .Tblcontainer .trainerTable tr:nth-child(odd) td {
+	background-color: rgb(242, 238, 238);
+	border-top: 0.1rem solid rgb(180, 179, 179);
+	border-bottom: 0.1rem solid rgb(180, 179, 179);
+}
+.availableTrainers .Tblcontainer .trainerTable .btn {
+	margin-top: 0;
+	font-size: 1rem;
+	color: white;
+	background-color: var(--main-color);
+}
+
+.availableTrainers .Tblcontainer .trainerTable .btn:hover {
+	letter-spacing: normal;
+	background-color: rgb(255, 222, 33);
+}
+
+/* --------------------x------------- Avaialable Trainer Section ----------x----------------------*/
+/* --------------------------------- Customer Query Popup  -------------------------------------*/
+.CustomerQueryChatbox {
+	position: fixed;
+	bottom: 2rem;
+	right: 3rem;
+	width: 4rem;
+	height: 4rem;
+}
+.CustomerQueryChatbox .chatboxbtn {
+	width: 100%;
+	height: 100%;
+	background-color: var(--main-color);
+	color: white;
+	border-radius: 50%;
+	cursor: pointer;
+	padding: 0.8rem 0.8rem;
+}
+.CustomerQueryChatbox .chatboxbtn {
+	font-size: 2rem;
+}
+.CustomerQueryChatbox .chatboxbtn:active {
+	transform: scale(0.9);
+}
+.CustomerQueryChatbox .chatboxSpace {
+	position: fixed;
+	bottom: 7rem;
+	right: 3rem;
+	z-index: 9;
+	background-color: white;
+	width: 33rem;
+	/* border: 0.1rem solid #c2c0c0; */
+	box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.1);
+	transform: scale(0);
+}
+.chatboxSpace.active {
+	transform: scale(1);
+}
+
+.CustomerQueryChatbox .chatboxHeader {
+	background-color: rgb(32, 30, 30);
+	color: white;
+	padding: 1.5rem 1.5rem;
+	display: flex;
+	box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.1);
+}
+.CustomerQueryChatbox .chatboxHeader h3 {
+	font-size: 1.3rem;
+	text-transform: none;
+}
+.CustomerQueryChatbox .chatboxHeader i {
+	font-size: 2rem;
+	margin-right: 1rem;
+}
+.CustomerQueryChatbox .chatboxContent {
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	height: 30rem;
+	overflow-y: scroll;
+}
+.CustomerQueryChatbox .chatContainer {
+	width: 90%;
+	padding: 0.75rem;
+}
+.CustomerQueryChatbox .chatsent {
+	align-self: flex-end;
+	background: rgb(72, 72, 70);
+	color: white;
+	border-radius: 1rem 0rem 1rem 1rem;
+	padding: 1rem;
+	margin-top: 1.5rem;
+}
+.CustomerQueryChatbox .chatreceive {
+	background: beige;
+	border-radius: 0rem 1rem 1rem 1rem;
+	padding: 1rem;
+	border: 0.1rem solid #c2c0c0;
+	margin-top: 1.5rem;
+}
+.CustomerQueryChatbox .chatboxContent .chatcontainerdate {
+	float: right;
+	font-size: 1rem;
+	margin-top: 0.7rem;
+}
+.CustomerQueryChatbox .chatboxFooter {
+	background: white;
+	box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.3);
+	padding: 0.5rem 1rem;
+}
+.CustomerQueryChatbox .chatboxFooter .chatboxMsgForm {
+	display: flex;
+	align-items: center;
+	border-radius: 1rem;
+}
+.CustomerQueryChatbox .chatboxFooter .chatBoxMsgInput {
+	background: #fff;
+	border-color: var(--main-color);
+	outline: var(--main-color);
+	resize: none;
+	border-radius: 0.5rem;
+	width: 90%;
+	padding: 0.5rem;
+	font-size: 1.4rem;
+	color: #333;
+	margin: 0.6rem 0;
+}
+.CustomerQueryChatbox .chatboxFooter .chatBoxMsgsubmitBtn {
+	background-color: white;
+	font-size: 2rem;
+	margin-left: 1rem;
+	border: none;
+	color: #605f5f;
+	cursor: pointer;
+}
+.CustomerQueryChatbox .chatboxFooter .chatBoxMsgsubmitBtn:hover {
+	color: #484848;
+}
+/* --------------------x-------------Customer Query Popup ----------x----------------------------*/
+/* --------------------x------------- Media Queries ----------x-------------------------------*/
+@media only screen and (max-width: 991px) {
+	html {
+		font-size: 55%;
+	}
+
+	header {
+		padding: 2rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	header #menu-btn {
+		display: initial;
+	}
+
+	header #menu-btn.fa-times {
+		transform: rotate(180deg);
+	}
+	header {
+		background-color: black;
+	}
+
+	header .navbar {
+		position: absolute;
+		top: 99%;
+		left: 0;
+		right: 0;
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* normal */
+		background-color: black;
+	}
+
+	header .navbar.active {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+
+	header .navbar a {
+		display: block;
+		margin: 0;
+		padding: 1.5rem 2rem;
+	}
+	.availableTrainers .Yourslot {
+		margin: 0rem 15rem;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	html {
+		font-size: 50%;
+	}
+	.subheading {
+		font-size: 7rem;
+	}
+	.availableTrainers .Yourslot {
+		margin: 0rem 7rem;
+	}
+}
+
+@media only screen and (max-width: 290px) {
+	html {
+		font-size: 40%;
+	}
+}
+
+/* --------------------x------------- Media Queries ----------x-------------------------------*/

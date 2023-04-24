@@ -1,0 +1,118 @@
+form {
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    width: 43rem;
+}
+
+form .upperTxt {
+    text-align: center;
+    color: #444;
+}
+
+form .upperTxt i {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+form .upperTxt h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+form .box {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: #333;
+    margin: .6rem 0;
+    text-transform: none;
+    border: 0.1rem solid rgba(213, 96, 96, 0.3);
+    outline: none;
+}
+form .inputName{
+    width: 48%;
+}
+form .lastName{
+    margin-left: 1.5rem;
+}
+
+form .nameFeilds{
+    display: flex;
+}
+
+form .selectbox {
+    width: 150%;
+    height: 90%;
+    font-size: 1.3rem;
+    color: #333;
+    border: 0.1rem solid rgba(213, 96, 96, 0.3);
+    outline: none;
+    text-align: center;
+}
+
+form .box:focus {
+    border-color: var(--main-color);
+}
+
+form #remember {
+    margin: 2rem 0;
+}
+
+form label {
+    font-size: 1.3rem;
+}
+
+form .btn {
+    display: block;
+    width: 100%;
+}
+
+form p {
+    padding: .5rem 0;
+    font-size: 1.3rem;
+    color: #666;
+}
+
+form p a {
+    color: var(--main-color);
+}
+
+form p a:hover {
+    text-decoration: underline;
+}
+
+form textarea {
+    resize: none;
+}
+
+form .selectFeild {
+    display: flex;
+    margin: 1rem 0;
+}
+
+form .selectFeild .items {
+    margin: 0 4rem;
+}
+
+form .selectFeild .selectslot {
+    margin: 0 2rem;
+}
+
+form .selectFeild label, form .selectFeild .txt {
+    color: #666;
+    font-size: 1.4rem;
+}
+
+.authenticateForm {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(8, 5, 5, 0.836)), url('../background2.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

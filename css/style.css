@@ -1,0 +1,567 @@
+/* --------------------x------------- Css Reset ----------x-------------------------------*/
+:root{
+    --main-color: rgb(255, 206, 0);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+/* ---------------------------------- Css Reset ------------------------------------------*/
+/* ---------------------------------- Utility Classes ------------------------------------------*/
+.btn{
+    padding: 0.4rem 3rem;
+    border: 0.09rem solid var(--main-color);
+    border-radius: 0.8rem;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    display: inline-block;
+    text-align: center;
+}
+.btn:hover{
+    letter-spacing: .2rem;
+}
+.subheading{
+    font-family: 'Oswald', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 0.1rem var(--main-color);
+    font-size: 9rem;
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    padding: 2rem 2rem;
+    pointer-events: none;
+}
+.subheading span{
+    color: black;
+    -webkit-text-stroke: rgba(22, 11, 11, 0.93);
+    position:absolute;
+    top:50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 4rem;
+}
+
+.popUp1CloseBtn{
+    position: absolute;
+    top:2rem; right: 3rem;
+    font-size: 4rem;
+    color:#fff;
+    cursor: pointer;
+    font-weight: bold;
+} 
+.PopUp1container{
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background:#fff;
+    width: 35rem;
+}
+.PopUpheader {
+    text-align: center;
+    color: #444;
+}
+.PopUpheader i{
+    font-size: 3rem;
+    cursor: pointer;   
+}
+.PopUpheader h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+.PopUpbuttons{
+    display: flex;
+    flex-direction: column;
+}
+
+/* --------------------x------------- Utility Classes --------x---------------------------------*/
+/* ---------------------------------- Header Section ------------------------------------------*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1;
+} 
+
+header .navbar a{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.8rem;
+    margin: 0 1rem;
+}
+
+header .name{
+    color: white;
+    font-size: 2rem;
+}
+
+header .icons{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+header .icons a{
+    color: white;
+}
+
+header .icons i{
+    padding: 0 .2rem;
+}
+
+header #menu-btn{
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    display: none;   /* normal */
+}
+
+header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom:  0.1rem solid #d3ad7f;
+    padding-bottom: 0.3rem;
+    letter-spacing: 0.2rem;
+}
+
+header .icons a:hover,header .icons i:hover{
+    color: var(--main-color);
+}
+
+.header.active{
+    background-color: black;
+    color: white;
+}
+header .options{
+    position: absolute;
+    top: 100%; 
+    right: -100%;
+    width: 20rem;
+    background: white;
+    padding: 0 1.5rem;
+    margin: 0 6rem;
+    border: 0.1rem solid var(--main-color);
+    z-index: 8
+}
+header .options.active{
+    right: 0;
+}
+header .options .optbtn{
+    color:  black;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+header .options a{
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+header .options a:hover{
+    border-bottom:  0.1rem solid gray;
+    padding-bottom: 0.2rem;
+}
+
+/* --------------------x------------- Header Section ----------x-------------------------------*/
+/* ---------------------------------- Login PopUp ------------------------------------------*/
+.LoginPopUp{
+    position: fixed;
+    top: -120%; left: 0;   /* normal top:0; */
+    z-index: 9;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.LoginPopUp.active{
+    top: 0;
+}
+/* --------------------x------------- Login PopUp ----------x-------------------------------*/
+/* ---------------------------------- SignUpPopUp ------------------------------------------*/
+.SignUpPopUp{
+    position: fixed;
+    top: -120%; left: 0;   /* normal top:0; */
+    z-index: 9;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.SignUpPopUp.active{
+    top: 0;
+}
+/* --------------------x------------- SignUpPopUp ----------x-------------------------------*/
+/* ---------------------------------- Home Section ------------------------------------------*/
+.home {
+    width: 100%;
+    height: 90vh;
+}
+.slider{
+    overflow: hidden;
+    width: 100%;
+    height: 90vh;
+}
+.slider figure .slide{
+    width: 20%;
+    height: 100vh;
+    padding: 25rem 8rem;
+    text-align: center;
+    animation: bg 15s infinite;
+    float: left;
+}
+@keyframes bg{
+    0%{
+        background: url('../images/background/b-image1.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    50%{
+        background: url('../images/background/b-image5.jpeg');
+        background-size: cover;
+        background-position: center;
+    }
+    80%{
+        background: url('../images/background/b-image2.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    100%{
+        background: url('../images/background/b-image1.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.slider figure div{
+    float: left;
+    width: 20%;
+}
+
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    animation: animate1 15s infinite;   
+}
+@keyframes animate1 {
+    0%{left:0%}
+    40%{left:-100%}
+    60%{left:-100%}
+    80%{left:0%}
+}
+
+.home .slider .slide .heading{
+    font-size: 5rem;
+    color: var(--main-color);
+    text-shadow: 0.3rem 0.5rem rgba(22, 11, 11, 0.93);
+    letter-spacing: 0.2rem;
+    font-family: 'Oswald', sans-serif;
+}
+ 
+.home .slider .slide .heading span{
+     font-family: 'Oswald', sans-serif;
+     color: transparent;
+     -webkit-text-stroke: 0.1rem var(--main-color);
+     text-shadow: 0.3rem 0.5rem rgba(255, 255, 255, 0.93);
+     font-size: 4rem;
+}
+.home .slider .slide p{
+     font-size: 2rem;
+     font-weight: lighter;
+     line-height: 1.8;
+     padding: 1rem 0;
+     color: #eee;
+}
+/* --------------------x------------- Home Section ----------x-------------------------------*/
+/* --------------------x------------- About Section ----------x-------------------------------*/
+.about{
+    margin-bottom: 7rem;
+    padding-top: 0.2rem;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    background: white;
+    flex-wrap: wrap;
+    margin: 0rem 10rem;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+}
+
+.about .row .image{
+    flex: 1 1 45rem;
+}
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+}
+.about .row .content p{
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+/* --------------------x------------- About Section ----------x-------------------------------*/
+/* ---------------------------------- Membership Plan Section --------------------------------*/
+.plan{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(136, 134, 134, 0.15)),url('../images/plan/mImage.jpeg');
+    padding-bottom: 4rem;
+    padding-top: 1.5rem;
+}
+.plan .subheading{
+    -webkit-text-stroke: 0.1rem white;
+}
+.plan .subheading span{
+    color: var(--main-color);
+    -webkit-text-stroke: rgba(22, 11, 11, 0.93);
+}
+.plan .container{
+    margin: 0rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap:2rem;
+}
+.plan .container .item{
+    background-color: white;
+    text-align: center;
+    border: 0.1rem solid white(245, 243, 243, 0.3);
+}
+.plan .container .item:hover{
+    transform: scale(1.1);
+}
+
+.plan .container .item .title{
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+}
+.plan .container .item .price{
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+}
+.plan .container .item .price sub, .plan .container .item .price sup{
+    color: var(--main-color);
+}
+.plan .container .item .facility{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.plan .container .item .btn{
+    margin-bottom: 2rem;
+}
+
+/* --------------------x------------- Membership Plan Section ----------x----------------------*/
+/* ---------------------------------- Services Section ---------------------------------*/
+.services{
+    padding-top: 1.5rem;
+    margin: 0rem 8rem;
+}
+.services .container{
+    display: flex;
+    flex-wrap: wrap;
+    grid: 1.5rem
+}
+.services .container .box{
+    flex: 1 1 30rem;
+    border-radius: 0.5rem;
+    padding: 0rem 2rem;
+    text-align: center;
+}
+.services .container .box i{
+    font-size: 5rem;
+    padding: 1rem;
+    color: black;
+}
+.services .container .box h3{
+    font-size: 2rem;
+    color: #333;
+}
+.services .container .box p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+.services .container .box:hover{
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+/* --------------------x------------- Services Section ----------x----------------------*/
+/* ---------------------------------- Gallery Section ---------------------------------*/
+.gallery{
+    margin: 0 8rem;
+    padding-top: 1.5rem;
+    padding-bottom: 6rem;
+}
+.gallery .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:2rem;
+}
+.gallery .container .image{
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border: 1rem solid #fff;
+    border-radius: 0.5rem;
+    height: 25rem;
+    position: relative;
+}
+.gallery .container .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.gallery .container .image .content{
+    position: absolute;
+    top:-100%; left: 0;    /* normal top:0 */
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    padding-top: 5rem;
+}
+.gallery .container .image:hover .content{
+    top:0;
+}
+.gallery .container .image .content h3{
+    font-size: 2.5rem;
+    color: white;
+}
+.gallery .container .image .content p{
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 0.5rem 0;
+}
+/* --------------------x------------- Gallery Section ----------x----------------------*/
+/* ---------------------------------- Footer Section ---------------------------------*/
+footer{
+    background: rgb(32, 30, 30);
+    padding: 0 7rem;
+    padding-top: 2rem;
+}
+footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    grid: 1.5rem;
+}
+footer .container .box{
+    padding: 1rem 0;
+    flex: 1 1 25rem;
+}
+footer .container .box h3{
+    font-size: 2.5rem;
+    padding: 1.5rem 0;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+footer .container .box p{
+    font-size: 1.5rem;
+    padding: 0.7rem 0;
+    padding-right: 4rem;
+    color: #eee;
+}
+footer .container .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.7rem 0;
+    color: #eee;
+}
+footer .container .box a:hover{
+    color: var(--main-color);
+}
+footer .credit{
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #eee;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.25);
+}
+/* --------------------x------------- Footer Section ----------x----------------------*/
+/* --------------------x------------- Media Queries ----------x-------------------------------*/
+@media only screen and (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+}
+
+@media only screen and (max-width:768px){
+    header #menu-btn{
+        display: initial;
+    }
+
+    header #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+    header{
+        background-color: black;
+    }
+
+    header .navbar{
+        position: absolute;
+        top:99%; left: 0; right: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);    /* normal */   
+        background-color: black;
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);    
+    }
+
+    header .navbar a{
+        display: block;
+        margin: 0;
+        padding : 1.5rem 2rem;
+    }
+} 
+
+@media only screen and (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .subheading{
+        font-size: 7rem;
+    }
+}
+
+@media only screen and (max-width:290px){
+    html{
+        font-size: 40%;
+    }
+}
+
+/* --------------------x------------- Media Queries ----------x-------------------------------*/

@@ -1,0 +1,56 @@
+/* ---------------------------------- Membership Plan Section --------------------------------*/
+.plan{
+    background-image: none;
+    margin-bottom: 3rem;
+}
+.plan .intro p{
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
+    margin: 0 9rem;
+    margin-bottom: 4rem;
+    line-height: 1.8;
+    text-align: center;
+}
+.plan .subheading{
+    -webkit-text-stroke: 0.1rem var(--main-color);
+}
+.plan .subheading span{
+    color: black;
+    -webkit-text-stroke: rgba(22, 11, 11, 0.93);
+}
+.plan .container .item{
+    border: 0.1rem solid black;
+    box-shadow: 0.5rem 0.5rem gainsboro;
+}
+.plan .container .item:hover{
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+}
+
+/* --------------------x------------- Membership Plan Section ----------x----------------------*/
+/* --------------------x------------- Privacy Policy Section ----------x----------------------*/
+.policy{
+    margin: 0rem 10rem;
+    margin-bottom: 8rem;
+    padding-top: 0.2rem;
+    text-align: center;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+}
+
+.policy .content{
+    padding: 2rem;
+}
+.policy .content h3{
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+}
+.policy .content p{
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.policy .content .line{
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.25);
+    margin: 3rem 13rem;
+}
+/* --------------------x------------- Privacy Policy Section ----------x----------------------*/

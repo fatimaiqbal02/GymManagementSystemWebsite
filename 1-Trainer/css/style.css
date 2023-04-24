@@ -1,0 +1,283 @@
+/* ---------------------------------- Trainer Profile Section -------------------------------------- */
+.trainerProfile{
+    position: fixed;
+    top: -120%; left: 0; /* normal top:0; */
+    z-index: 100;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trainerProfile.active{
+    top: 0;
+}
+.trainerProfile .container{
+    display: flex;
+    background-color: white;
+    max-height: 86vh;
+}
+.trainerProfile .mainInfo img{
+    width: 8rem;
+    height: 8rem;
+    border: 0.2rem solid black;
+    border-radius: 50%;
+}
+.trainerProfile .mainInfo .name{
+    font-weight: bold;
+}
+.trainerProfile .mainInfo .email{
+    font-weight: lighter;
+}
+.trainerProfile .mainInfo .btn{
+    font-size: 1.2rem;
+}
+.trainerProfile .mainInfo .btn:hover{
+    letter-spacing: normal;
+    background-color: rgb(255, 222, 33);
+}
+.trainerProfile form{
+    width: 28rem;
+    padding: 0rem 0rem;
+}
+.trainerProfile form .box{
+    font-size: 1.2rem;
+}
+.trainerProfile form .selectFeild .txt,.trainerProfile form .selectFeild label {
+    font-size: 1.2rem;
+}
+.trainerProfile form .Txt h2{
+    text-align: left;
+    font-weight: bold;
+    color:rgb(4, 4, 4);
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+} 
+.trainerProfile form .btn{
+    display: block;
+    margin: auto;
+    width: 70%;
+    font-size: 1.2rem;
+}
+.trainerProfile form .box{
+    width: 90%;
+}
+.trainerProfile form .selectFeild .items{
+    margin: 0 3rem;
+}
+header .trainerProfile .selectslot{
+    width: 9rem;
+}
+.trainerProfile .mainInfo{
+    margin: 18rem 2rem;
+    text-align: center;
+    color: black;
+}
+/* ------------------x--------------- Trainer Profile Section ----------------x---------------------- */
+/* ---------------------------------- Home Section -------------------------------------- */
+.header{
+    background-color: black;
+    color: white;
+}
+.home{
+    height: 60rem;
+    background: url('../images/backgroundPic.jpg');
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+}
+.home .heading{
+    font-size: 3rem;
+}
+/* ------------------x--------------- Home Section ----------------x---------------------- */
+/* ---------------------------------- MyCustomers Section --------------------------------- */
+.myCustomers{
+    margin-bottom: 3rem;
+}
+.myCustomers .container{
+    height:26rem;
+    display:block;
+    margin: auto;
+    margin-bottom: 9rem;
+    max-width: fit-content;
+    border: 0.1rem solid #888;/**/
+}
+.myCustomers .container .searchArea{
+    display: flex;
+    width: 100%;
+}
+.myCustomers .container .searchArea i{
+    font-size: 1.5rem;
+    margin: .9rem 0.3rem;
+    color: rgb(127, 122, 122);
+    padding: 0.3rem;
+}
+.container .searchArea input{ 
+    font-size: 1.3rem;
+    color: #333;
+    margin: 0.7rem 0.3rem;
+    padding: 0.3rem;
+    height: fit-content;
+    text-transform: none;
+    border: 0.1rem solid rgb(180, 179, 179);
+    border-radius: 3rem;
+    outline: none;
+    width: 100%;
+}
+.myCustomers .container input:focus {
+    border-color: var(--main-color);
+}
+.myCustomers .Tblcontainer .Tblheader{  
+    background-color: rgb(190, 185, 185);
+    color: black;
+    padding: 1rem 5rem 1rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    display: flex;
+}
+.myCustomers .Tblcontainer .Tblheader .col1{
+    margin: 0rem 0.8rem;
+}
+.myCustomers .Tblcontainer .Tblheader .col2{
+    margin-left: 10rem;
+}
+.myCustomers .Tblcontainer .Tblheader .col3{
+    margin-left: 12rem;
+}
+.myCustomers .Tblcontainer .Tblheader .col4{
+    margin-left: 10rem;
+}
+.myCustomers .Tblcontainer .Tblheader .col5{
+    margin-left: 13rem;
+}
+.myCustomers .Tblcontainer .customerTable{  
+    overflow-y:scroll;
+    height:18rem;
+    display:block;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+}
+
+.myCustomers .Tblcontainer .customerTable td{
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    width: 17rem;
+}
+
+.myCustomers .Tblcontainer .customerTable tr:nth-child(odd) td{
+    background-color: rgb(242, 238, 238);
+    border-top: 0.1rem solid rgb(180, 179, 179);
+    border-bottom: 0.1rem solid rgb(180, 179, 179);
+}
+.myCustomers .Tblcontainer .customerTable .btn{
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+.myCustomers .Tblcontainer .customerTable .btn:hover{
+    letter-spacing: normal;
+    background-color: rgb(255, 222, 33);
+}
+
+/* ------------------x--------------- MyCustomers Section -----------x--------------------- */
+/* ----------------------------------- Diet Plan Section ---------------------------------- */
+.dietPlanDescPopUp form .box, .dietPlanDescPopUp form .btn{
+    font-size: 1.2rem;
+}
+.dietPlanDescPopUp form .btn:hover{
+    letter-spacing: normal;
+    background-color: rgb(255, 222, 33);
+}
+
+.dietPlanDescPopUp form #dietPlanDescCloseBtn{
+    position: absolute;
+    top: 0rem; right: 2rem;
+    padding: 1rem 0;
+    font-size: 3rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.dietPlanDescPopUp form .upperTxt{
+    margin: 1.5rem 0;
+}
+.dietPlanDescPopUp{
+    position: fixed;
+    bottom: 8rem;
+    right: 5rem;
+    z-index: 9;
+    display: none;
+}
+.dietPlanDescPopUp.active{
+    display: inline-block;
+}
+.dietPlanDescPopUp form{
+    margin: 0rem 0rem;
+    border: 0.4rem solid #f1f1f1
+}
+/* ----------------------x------------ Diet Plan Section -----------x---------------------- */
+/* ----------------------------------- Workplace Rules Section ---------------------------------- */
+.employeeRules{
+    margin: 0rem 10rem;
+    margin-bottom: 8rem;
+    padding-top: 0.3rem;
+    text-align: center;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+    margin-top: 11rem;
+}
+
+.employeeRules .content{
+    padding: 2rem;
+}
+.employeeRules .content h3{
+    font-size: 3rem;
+    margin-bottom: 0.4rem;
+    color: rgb(0, 0, 0);
+}
+.employeeRules .content p{
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
+    line-height: 1.8;
+}
+.employeeRules .content .line{
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.25);
+    margin: 3rem 13rem;
+}
+.employeeRules p span{
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: var(--main-color);
+}
+/* ----------------------x------------ Workplace Rules Section -----------x---------------------- */
+@media only screen and (max-width:600px){
+    .myCustomers .Tblcontainer .Tblheader .col1{
+        margin: 0rem 0.8rem;
+    }
+    .myCustomers .Tblcontainer .Tblheader .col2{
+        margin-left: 6rem;
+    }
+    .myCustomers .Tblcontainer .Tblheader .col3{
+        margin-left: 5rem;
+    }
+    .myCustomers .Tblcontainer .Tblheader .col4{
+        margin-left: 7rem;
+    }
+    .myCustomers .Tblcontainer .Tblheader .col5{
+        margin-left: 4rem;
+    }
+}
+@media only screen and (max-width:498px){
+    .myCustomers .Tblcontainer .Tblheader .col1{
+        margin: 0rem 0.8rem;
+    }
+    .myCustomers .Tblcontainer .Tblheader .col2{
+        margin-left: 4rem;
+    }
+    .myCustomers .Tblcontainer .Tblheader .col3{
+        margin-left: 3rem;
+    }
+    .myCustomers .Tblcontainer .Tblheader .col4{
+        margin-left: 5rem;
+    }
+    .myCustomers .Tblcontainer .Tblheader .col5{
+        margin-left: 3rem;
+    }
+}
